@@ -85,6 +85,12 @@ const deleteFromIncompleteList = (target) => {
 
 //☆未完了リストに追加する関数
 const createIncompleteList = (text) => {
+  //テスト　oncligkプロパティを使う方法
+  let button = document.getElementById("xxx");
+  button.onclick = function butotnClick() {
+    alert("Click");
+  };
+
   //div生成
   const div = document.createElement("div");
   div.className = "list-row";
